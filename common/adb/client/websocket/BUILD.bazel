@@ -1,0 +1,14 @@
+load("@npm_bazel_typescript//:index.bzl", "ts_config", "ts_library")
+
+package(default_visibility = ["//:__subpackages__"])
+
+ts_library(
+    name = "websocket",
+    tsconfig = "//common:tsconfig.json",
+    srcs = ["websocket_adb_client_stream.ts"],
+    deps = [
+        "//common:util",
+        "//common/adb:adb_stream",
+        "//common/adb/client:adb_client_stream",
+        ],
+)

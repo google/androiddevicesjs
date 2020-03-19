@@ -1,0 +1,7 @@
+node_modules
+bazel*
+dist
+.firebase
+.DS_Store
+.bazelrc.user
+yarn.lock

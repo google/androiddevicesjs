@@ -1,0 +1,16 @@
+load("@npm_bazel_typescript//:index.bzl", "ts_config", "ts_library")
+
+package(default_visibility = ["//:__subpackages__"])
+
+ts_library(
+    name = "util",
+    srcs = [
+        "util.ts",
+        "promise.ts",
+        "text.ts",
+    ],
+    deps = [
+        "@npm//google-closure-library",
+        ],
+    tsconfig = ":tsconfig.json",
+)
