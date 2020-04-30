@@ -1,0 +1,12 @@
+load("@npm_bazel_typescript//:index.bzl", "ts_config", "ts_library")
+
+package(default_visibility = ["//:__subpackages__"])
+
+ts_library(
+    name = "adb_stream",
+    tsconfig = "//common:tsconfig.json",
+    srcs = ["adb_stream.ts"],
+    deps = [
+        "//common:util",
+        ],
+)

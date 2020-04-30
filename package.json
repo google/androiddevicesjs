@@ -1,0 +1,12 @@
+{
+    "private": true,
+    "devDependencies": {
+        "@bazel/protractor": "^1.5.0",
+	"@bazel/typescript": "^1.5.0",
+	"typescript": "^3.1.6",
+	"google-closure-library": "^20200315.0.0"
+    },
+    "scripts": {
+        "test": "bazel test ..."
+    }
+}
